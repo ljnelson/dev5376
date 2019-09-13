@@ -6,6 +6,6 @@ javax:
             greetingDataSource:
                 dataSourceClassName: org.h2.jdbcx.JdbcDataSource
                 dataSource:
-                    url: jdbc:h2:mem:greeting;INIT=RUNSCRIPT FROM 'classpath:greeting.ddl' 
+                    url: jdbc:h2:mem:greeting;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'classpath:greeting.ddl';TRACE_LEVEL_FILE=4
                     user: sa
                     password: ""
